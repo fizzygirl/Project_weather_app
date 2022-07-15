@@ -1,0 +1,75 @@
+.main {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  font-family: "Poppins", sans-serif;
+  color: #2d4059;
+  position: fixed;
+  max-width: 80%;
+  top: 50px;
+  left: 50px;
+  margin-bottom: 50px;
+}
+
+.current-location {
+  list-style: none;
+  padding-left: 5px;
+  padding-top: 20px;
+}
+.current-location2 {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 13px;
+  text-align: left;
+}
+.temperature {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.units {
+  position: relative;
+  top: -24px;
+}
+
+.sun-icon {
+  /* font-size: 100px; */
+  color: rgb(247, 247, 72);
+  display: block;
+  text-align: center;
+  margin: 0 0 20px 0;
+  width: 120px;
+}
+
+.form-field {
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.2);
+}
+
+.btn {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  border: none;
+  color: rgb(16, 12, 51);
+}
+
+.main-field {
+  background: url(img/clouds.jpg) center;
+  background: #f9f9f9;
+}
+.form-5days {
+  background: #fbefea;
+}
+.border {
+  border: black;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 6px;
+  background: #f9f9f9;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.2);
+}
+.days-weather {
+  list-style: none;
+  padding: 0;
+}
