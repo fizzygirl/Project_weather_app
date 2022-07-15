@@ -72,22 +72,6 @@ function searchcity(event) {
   }
 }
 
-// function fahrenheitclick(event) {
-//   event.preventDefault();
-//   let fahrenheitclick = document.querySelector("#temp");
-//   let temp = 26;
-//   let celciustofahrenheit = Math.round((temp * 9) / 5 + 32);
-//   fahrenheitclick.innerHTML = `${celciustofahrenheit}`;
-// }
-
-// function celciusclick(event) {
-//   event.preventDefault();
-//   let celciusclick = document.querySelector("#temp");
-//   let temp = 79;
-//   let fahrenheittocelcius = Math.round(((temp - 32) * 5) / 9);
-//   celciusclick.innerHTML = `${fahrenheittocelcius}`;
-// }
-
 let currentday = document.querySelector("#currentday");
 let now = new Date();
 
@@ -101,12 +85,6 @@ let weatherHum = document.querySelector("#weather-humidity");
 let weatherWind = document.querySelector("#weather-wind");
 
 form.addEventListener("submit", searchcity);
-
-// let fahrenheit = document.querySelector("#fahrenheit-link");
-// fahrenheit.addEventListener("click", fahrenheitclick);
-
-// let celcius = document.querySelector("#celcius-link");
-// celcius.addEventListener("click", celciusclick);
 
 function showcurrentTemp(response) {
   let temperature = Math.round(response.data.main.temp);
