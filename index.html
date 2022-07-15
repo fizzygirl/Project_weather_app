@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="card main form-field">
+    <div class="card main">
       <div class="card-body">
         <form id="entercity">
           <div class="row">
@@ -37,7 +37,7 @@
             </div>
             <div class="col-3">
               <input
-                class="btn btn-light form-control shadow-sm"
+                class="btn btn-light form-control shadow-sm form-field"
                 type="submit"
                 value="Search"
               />
@@ -55,85 +55,81 @@
             </div>
           </div>
         </form>
-        <div class="card mt-3 form-field main-field">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-7">
-                <h1></h1>
-                <ul class="current-location">
-                  <li id="currentday"></li>
-                  <span class="temperature" id="temp"> </span>
-                  <span class="units"> <a id="celcius-link">°C</a> </span>
-                  <li id="weather-description">Clear</li>
-                </ul>
-              </div>
-              <div class="col-5">
-                <ul class="current-location2">
-                  <img src="./img/sunny.png" alt="sunny" class="sun-icon" />
-                  <li>Humidity: <span id="weather-humidity">0</span> %</li>
-                  <li>Wind: <span id="weather-wind">0</span> km/h</li>
-                </ul>
-              </div>
+        <div class="m-4">
+          <div class="row">
+            <div class="col-7">
+              <h1></h1>
+              <ul class="current-location">
+                <li id="currentday"></li>
+                <span class="temperature" id="temp"> </span>
+                <span class="units"> °C </span>
+                <li id="weather-description"></li>
+              </ul>
             </div>
-            <div class="button-weather">
-              <div class="row">
-                <div class="col-6">
-                  <input
-                    type="submit"
-                    class="btn btn-light mb-3 form-field"
-                    value="Todays weather"
-                  />
-                </div>
-                <div class="col-6">
-                  <input
-                    type="submit"
-                    class="btn btn-light form-control form-field"
-                    value="For 5 days"
-                  />
-                </div>
-              </div>
+            <div class="col-5">
+              <ul class="current-location2">
+                <img src="./img/sunny.png" alt="sunny" class="sun-icon" />
+                <li>Humidity: <span id="weather-humidity">0</span> %</li>
+                <li>Wind: <span id="weather-wind">0</span> km/h</li>
+              </ul>
             </div>
-            <div class="row">
-              <div class="col-2 border">
-                <ul class="days-weather">
-                  <li>Mon</li>
-                  <li>20.06</li>
-                  <li><img src="./img/sunny.png" alt="sunny" /></li>
-                  <li>26°C</li>
-                </ul>
-              </div>
-              <div class="col-2 border">
-                <ul class="days-weather">
-                  <li>Tue</li>
-                  <li>21.06</li>
-                  <li><img src="./img/cloudy.png" alt="sunny" /></li>
-                  <li>26°C</li>
-                </ul>
-              </div>
-              <div class="col-2 border">
-                <ul class="days-weather">
-                  <li>Wed</li>
-                  <li>22.06</li>
-                  <li><img src="./img/cloudy.png" alt="sunny" /></li>
-                  <li>24°C</li>
-                </ul>
-              </div>
-              <div class="col-2 border">
-                <ul class="days-weather">
-                  <li>Thu</li>
-                  <li>23.06</li>
-                  <li><img src="./img/thunderstorms.png" alt="sunny" /></li>
-                  <li>26°C</li>
-                </ul>
-              </div>
-              <div class="col-2 border">
-                <ul class="days-weather">
-                  <li>Fri</li>
-                  <li>24.06</li>
-                  <li><img src="./img/sunny.png" alt="sunny" /></li>
-                  <li>25°C</li>
-                </ul>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="submit"
+                class="btn btn-light mb-3 form-control form-field"
+                value="Todays weather"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="submit"
+                class="btn btn-light mb-3 form-control form-field"
+                value="For 5 days"
+              />
+            </div>
+          </div>
+          <div class="row five-day-weather">
+            <div class="col">
+              <ul class="days-weather">
+                <li>Mon</li>
+                <li>20.06</li>
+                <li><img src="./img/sunny.png" alt="sunny" /></li>
+                <li>26°C</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="days-weather">
+                <li>Tue</li>
+                <li>21.06</li>
+                <li><img src="./img/cloudy.png" alt="sunny" /></li>
+                <li>26°C</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="days-weather">
+                <li>Wed</li>
+                <li>22.06</li>
+                <li><img src="./img/cloudy.png" alt="sunny" /></li>
+                <li>24°C</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="days-weather">
+                <li>Thu</li>
+                <li>23.06</li>
+                <li><img src="./img/thunderstorms.png" alt="sunny" /></li>
+                <li>26°C</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="days-weather">
+                <li>Fri</li>
+                <li>24.06</li>
+                <li><img src="./img/sunny.png" alt="sunny" /></li>
+                <li>25°C</li>
+              </ul>
             </div>
           </div>
         </div>
