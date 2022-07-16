@@ -58,9 +58,14 @@ body {
 }
 
 .btn {
-  background: rgba(251, 245, 194, 0.3);
+  background: rgba(224, 223, 223, 0.3);
   border: none;
   color: rgb(16, 12, 51);
+}
+.btn:hover {
+  background: rgba(161, 161, 161, 0.3);
+  border: none;
+  color: white;
 }
 
 .five-day-weather {
